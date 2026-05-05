@@ -1,15 +1,13 @@
-function validateForm() {
+function register() {
     let name = document.getElementById("name").value;
     let email = document.getElementById("email").value;
-    let message = document.getElementById("message");
+    let msg = document.getElementById("msg");
 
     if (name === "" || email === "") {
-        message.innerText = "Please fill all fields!";
-        message.style.color = "red";
-        return false;
+        msg.innerText = "Please fill all fields!";
+        msg.className = "error";
+    } else {
+        msg.innerText = "Registration Successful!";
+        msg.className = "success";
     }
-
-    message.innerText = "Registration Successful!";
-    message.style.color = "green";
-    return false; // important (prevents page refresh)
 }

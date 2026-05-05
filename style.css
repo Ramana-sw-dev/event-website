@@ -1,23 +1,53 @@
 body {
-    font-family: Arial;
-    margin: 0;
+    font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-}
-#message {
-    font-weight: bold;
-    margin-top: 10px;
+    margin: 0;
 }
 
-nav {
+header {
     background: black;
     color: white;
     padding: 15px;
     text-align: center;
 }
 
-section {
-    padding: 20px;
-    margin: 20px;
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+.card {
     background: white;
+    margin: 20px;
+    padding: 20px;
     border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+
+button {
+    background: black;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: green;
+}
+
+.success {
+    color: green;
+    font-weight: bold;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
 }
