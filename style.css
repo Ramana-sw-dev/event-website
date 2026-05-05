@@ -3,6 +3,10 @@ body {
     margin: 0;
     background-color: #f4f4f4;
 }
+#message {
+    font-weight: bold;
+    margin-top: 10px;
+}
 
 nav {
     background: black;
